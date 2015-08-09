@@ -16,7 +16,7 @@ Chart.types.Doughnut.extend({
     // Add the exterior stroke
     var centerX = this.chart.width / 2;
     var centerY = this.chart.height / 2;
-    var radius = this.chart.height / 2;
+    var radius = (this.chart.height / 2) - 1;
 
     this.chart.ctx.beginPath();
     this.chart.ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
