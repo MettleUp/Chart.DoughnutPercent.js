@@ -4,6 +4,7 @@ Chart.DoughnutPercent.js
 An extension of the [Chart.js](https://github.com/nnnick/Chart.js) Doughnut chart type. Accepts a single data point and shows an arc based on a total of 100%. Also includes an exterior stroke around the entire circle.
 
 ```javascript
+<canvas id="myChart" width="500" height="500"></canvas>
 <script type="text/javascript" src="Chart.js"></script>
 <script type="text/javascript" src="Chart.DoughnutPercent.js"></script>
 <script type="text/javascript">
