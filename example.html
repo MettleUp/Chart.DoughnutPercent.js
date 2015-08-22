@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Chart.DoughnutPercent.js example</title>
+	</head>
+	<body>
+    <canvas id="myChart" width="500" height="500"></canvas>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+    <script type="text/javascript" src="Chart.DoughnutPercent.js"></script>
+    <script type="text/javascript">
+      var data = {
+                   value: 85,
+                   color: '#59ae83'
+                 }
+
+      var options = {
+                      animationEasing: 'easeOutBounce',
+                      animateRotate: true,
+                      animateScale: false,
+                      animationSteps: 50,
+                      percentageInnerCutout: 90,
+                      segmentShowStroke: false,
+                      strokeColor: '#59ae83',
+                      labelColor: "#59ae83",
+                      showLabel: true
+                    }
+
+      var ctx = document.getElementById("myChart").getContext("2d");
+      var myDoughnutChart = new Chart(ctx).DoughnutPercent(data, options);
+    </script>
+	</body>
+</html>
